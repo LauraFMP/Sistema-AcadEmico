@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 6 - Ordem Crescente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Exercício 6</h2>
+    <p>Digite <strong>cinco números</strong> para ordená-los em ordem crescente.</p>
+
+    <form action="ex06_process.php" method="post">
+      <label>A:</label>
+      <input type="number" name="nums[]" required>
+      <label>B:</label>
+      <input type="number" name="nums[]" required>
+      <label>C:</label>
+      <input type="number" name="nums[]" required>
+      <label>D:</label>
+      <input type="number" name="nums[]" required>
+      <label>E:</label>
+      <input type="number" name="nums[]" required>
+
+      <button type="submit">Ordenar</button>
+    </form>
+
+    <a class="btn-secundario" href="index.php"> Voltar ao início</a>
+  </div>
+</body>
+</html>

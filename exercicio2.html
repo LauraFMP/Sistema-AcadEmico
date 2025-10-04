@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2 - Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Exercício 2</h2>
+        <p>Informe um número e veja sua tabuada em formato de lista ou tabela.</p>
+
+        <form action="exercicio2.php" method="POST">
+            <label for="numero">Digite um número:</label>
+            <input type="number" id="numero" name="numero" required>
+
+            <label for="formato">Escolha o formato:</label>
+            <select name="formato" id="formato" required>
+                <option value="lista">Lista</option>
+                <option value="tabela">Tabela</option>
+            </select>
+
+            <button type="submit">Gerar Tabuada</button>
+        </form>
+
+        <a class="btn-secundario" href="index.php"> Voltar ao início</a>
+    </div>
+</body>
+</html>

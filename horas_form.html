@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Alunos - Horas Complementares</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Cadastro de Aluno</h1>
+    <p>Preencha os campos abaixo para registrar suas horas complementares</p>
+
+    <form action="cadastro.php" method="POST">
+      <input type="text" name="nome" placeholder="Nome do Aluno" required>
+      <input type="text" name="matricula" placeholder="Matrícula" required>
+      <input type="text" name="curso" placeholder="Curso" required>
+      <input type="email" name="email" placeholder="E-mail Institucional" required>
+      <input type="text" name="telefone" placeholder="Telefone" required>
+      <input type="text" name="endereco" placeholder="Endereço" required>
+      <input type="text" name="cep" placeholder="CEP" required>
+      <input type="text" name="cidade" placeholder="Cidade" required>
+      <input type="text" name="uf" placeholder="UF (Estado)" maxlength="2" required>
+      <input type="text" name="curso_horas" placeholder="Curso para Horas Complementares" required>
+      <input type="number" name="carga_horaria" placeholder="Carga Horária (em horas)" required>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <a href="index.php" class="btn-secundario">Voltar ao Painel</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* ============================== */
+/* ESTILO GERAL E ESTRUTURA BASE  */
+/* ============================== */
+body {
+  background-color: #fff4f8;
+  font-family: 'Press Start 2P', cursive;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* Contêineres principais */
+.login-container,
+.welcome-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border: 2px solid #ffb6d9;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(255, 77, 166, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.login-container:hover,
+.welcome-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 77, 166, 0.25);
+}
+
+/* ============================== */
+/* TEXTOS E TÍTULOS               */
+/* ============================== */
+h1 {
+  color: #ff4da6;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* ============================== */
+/* FORMULÁRIOS                    */
+/* ============================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ffb6d9;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 0.75rem;
+  color: #444;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff80bf;
+  box-shadow: 0 0 5px rgba(255, 77, 166, 0.3);
+}
+
+button {
+  background: linear-gradient(135deg, #ff80bf, #ff4da6);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff4da6, #ff1a8c);
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(255, 26, 140, 0.3);
+}
+
+/* ============================== */
+/* LINKS E BOTÕES SECUNDÁRIOS     */
+/* ============================== */
+a {
+  display: inline-block;
+  color: #ff4da6;
+  text-decoration: none;
+  font-size: 0.7rem;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #cc0066;
+}
+
+.btn-secundario {
+  background: #ffe6f0;
+  color: #ff4da6;
+  padding: 10px 15px;
+  border: 2px solid #ffb6d9;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  box-shadow: 2px 2px 0px #ffb6d9;
+  transition: all 0.2s ease;
+}
+
+.btn-secundario:hover {
+  background: #ff4da6;
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 3px 3px 0px #cc0066;
+}
+
+/* ============================== */
+/* RESULTADOS (cores suaves)      */
+/* ============================== */
+.resultado-pos {
+  background-color: #e8fbe8;
+  color: #2e7d32;
+}
+
+.resultado-neg {
+  background-color: #fde0e0;
+  color: #b71c1c;
+}
+
+.resultado-zero {
+  background-color: #fffbe0;
+  color: #795548;
+}
+
+.resultado-pos, .resultado-neg, .resultado-zero {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin: 10px 0;
+}
+
+/* ============================== */
+/* ESTILOS DE EXERCÍCIOS ESPECÍFICOS */
+/* ============================== */
+.sucesso {
+  background-color: #e6ffe6;
+  color: #2e7d32;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(46, 125, 50, 0.2);
+  margin-top: 10px;
+}
+
+.erro {
+  background-color: #ffe6e6;
+  color: #b71c1c;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(183, 28, 28, 0.2);
+  margin-top: 10px;
+}
+
+/* ============================== */
+/* DASHBOARD / PÁGINA INICIAL     */
+/* ============================== */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bloco {
+  flex: 1 1 400px;
+  background: #fff;
+  border: 2px solid #ffb6d9;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(255, 77, 166, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bloco:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 77, 166, 0.25);
+}
+
+/* ============================== */
+/* LISTAS DE LINKS (EXERCÍCIOS)   */
+/* ============================== */
+.welcome-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.welcome-container ul li {
+  margin: 10px 0;
+}
+
+.welcome-container ul li a {
+  display: block;
+  padding: 10px;
+  background: #fff7fb;
+  border: 2px solid #ffb6d9;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ff4da6;
+  font-size: 0.75rem;
+  transition: all 0.25s ease;
+}
+
+.welcome-container ul li a:hover {
+  background: #ff4da6;
+  color: white;
+  transform: scale(1.04);
+  box-shadow: 3px 3px 0px #cc0066;
+}
+
+/* ============================== */
+/* BOTÃO SAIR                     */
+/* ============================== */
+.logout {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.logout a {
+  display: inline-block;
+  background: #ff4da6;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logout a:hover {
+  background: #ff1a8c;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 26, 140, 0.3);
+}
+
+/* Exercicio 6 - Botões de retorno */
+/* === Exercicio 6 — destaque menor / médio / maior === */
+.menor {
+  background-color: #e8f8ec; /* verde muito claro */
+  color: #157a3b;            /* verde escuro para leitura */
+  padding: 10px;
+  border-radius: 8px;
+  margin: 6px 0;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(21,122,59,0.10);
+}
+
+.medio {
+  background-color: #fff9d9; /* amarelo claro */
+  color: #8a6a00;            /* amarelo/âmbar escuro */
+  padding: 10px;
+  border-radius: 8px;
+  margin: 6px 0;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(138,106,0,0.08);
+}
+
+.maior {
+  background-color: #fff0f0; /* vermelho/rosa muito claro */
+  color: #8b0000;            /* vermelho escuro */
+  padding: 10px;
+  border-radius: 8px;
+  margin: 6px 0;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(139,0,0,0.08);
+}
+
+/* garante consistência visual nas listas */
+.login-container ul, .login-container ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.login-container ul li {
+  padding: 0;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atualizar Carga Horária - Horas Complementares</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Atualizar Carga Horária</h1>
+    <p>Informe a matrícula e as horas adicionais</p>
+
+    <form action="somar_carga.php" method="POST">
+      <input type="text" name="matricula" placeholder="Matrícula do Aluno" required>
+      <input type="number" name="nova_carga" placeholder="Horas a adicionar" min="1" required>
+      <button type="submit">Atualizar</button>
+    </form>
+
+    <a href="index.php" class="btn-secundario">Voltar ao Painel</a>
+  </div>
+</body>
+</html>

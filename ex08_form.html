@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 8 - Cálculo de Média</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Exercício 8</h2>
+    <p>Digite as <strong>três notas</strong> do aluno para calcular a média.</p>
+
+    <form action="ex08_resultado.php" method="post">
+      <label for="nota1">Nota A1:</label>
+      <input type="number" step="0.1" name="nota1" id="nota1" required>
+
+      <label for="nota2">Nota A2:</label>
+      <input type="number" step="0.1" name="nota2" id="nota2" required>
+
+      <label for="nota3">Nota A3:</label>
+      <input type="number" step="0.1" name="nota3" id="nota3" required>
+
+      <button type="submit">Calcular Média</button>
+    </form>
+
+    <a class="btn-secundario" href="index.php"> Voltar ao início</a>
+  </div>
+</body>
+</html>
